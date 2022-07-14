@@ -8,11 +8,11 @@ class Car
 	end
 
 	def add_fuel amount
-		@fuel == amount
+		@fuel += amount
 	end
 
 	def range
-		0
+		@fuel * MILES_PER_GALLON
 	end
 end
 
